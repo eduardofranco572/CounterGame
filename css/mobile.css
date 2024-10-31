@@ -1,0 +1,64 @@
+@media (max-width: 518px) {
+    .player {
+        margin-top: 3rem;
+        width: 8rem;
+        height: 13rem;
+    }
+
+    .namePlayer {
+        font-size: 18px;
+    }
+
+    .qtds h1 {
+        margin: 0 0.5rem 0 0.5rem;
+        font-size: 26px;
+    }
+
+    .qtds span, .qtdsFaz span {
+        font-size: 26px;
+    }
+
+    .qtdsFaz button {
+        width: 30px;
+        margin: 0 10px 0 10px;
+        height: 30px;
+    }
+
+    .qtdsFaz h1 {
+        margin: 0 0.5rem 0 0.5rem;
+        font-size: 16px;
+    }
+
+    .menu {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .Jogadores {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .elementos,
+    .elementosOrdem,
+    .elementosGame{
+        width: 90%;
+    }
+
+    .elementosOrdem {
+        height: 80%;
+    }
+}
+
+@media (max-width: 320px) {
+    .addPlayer span, 
+    .addVida span, 
+    .restartGame span, 
+    .ordenarPlyers span, 
+    .trocarWallpaper span {
+        font-size: 26px;
+    }
+}

@@ -1,0 +1,393 @@
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+}
+
+body {
+    background-color: #162521;
+    margin: 0;
+    padding: 0;
+    overflow: initial;
+    color: white;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+}
+
+.Jogadores {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.player {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    width: 13rem;
+    height: 17rem;
+    padding: 12px;
+    background-color: #3C474B;
+    border-radius: 1rem;
+    backdrop-filter: blur(10px);
+    background-color: #3c474b91;
+    border: 2px solid rgb(255 255 255 / 57%);
+    margin: 1rem;
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.namePlayer {
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.life {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.life span {
+    font-size: 36px;
+    margin-right: 5px;
+}
+
+.life p {
+    font-size: 36px;
+}
+
+.qtds {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.qtds h1 {
+    margin: 0 0.5rem 0 0.5rem;
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+.titleBtn{
+    margin-bottom: 0.5rem;
+}
+
+.qtds span, .qtdsFaz span {
+    font-size: 40px;
+    user-select: none;
+}
+
+.addBtn span, 
+.removeBtn span{
+    font-size: 29px !important;
+    user-select: none;
+}
+
+.agrupabtn{
+    display: flex;
+    align-items: center;
+}
+
+.qtdsFaz {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.qtdsFaz h1 {
+    margin: 0 0.5rem 0 0.5rem;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.qtdsFaz button {
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.3rem;
+    margin: 0 10px 0 10px;
+    height: 2.3rem;
+}
+
+.Jogadores .player:last-child {
+    margin-bottom: 3rem;
+}
+
+.addPlayer span, 
+.addVida span,
+.restartGame span,
+.ordenarPlyers span,
+.trocarWallpaper span {
+    margin: 0.5rem 1rem 0rem 1rem;
+    font-size: 40px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.menu {
+    position: fixed;
+    right: 0;
+}
+
+.passar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.btnPassaTurno button, 
+.alinhaform button,
+#salvarOrdem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    width: 10rem;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 12px;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: #ff7f00;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+}
+
+.cardAddPlayer, 
+.cardAddVida,
+.cardAddRounds,
+.cardOrdenarPlayers,
+.cardTrocarWallpaper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.elementos {
+    background-color: #3C474B;
+    border-radius: 1rem;
+    width: 60%;
+    height: 45%;
+}
+
+.fechar, 
+.fecharVida, 
+.fecharGame,
+.fecharOrdenar,
+.fecharTW {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 1rem;
+}
+
+.fechar span, 
+.fecharVida span, 
+.fecharGame span,
+.fecharOrdenar span,
+.fecharTW span{
+    font-size: 40px;
+    cursor: pointer;
+    user-select: none;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    align-items: center;
+    width: 100%;
+}
+
+.alinhaform{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80%;
+    margin-bottom: 1rem;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 16px;
+}
+
+form h1 {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.alinhaform button{
+    margin-top: 2rem;
+}
+
+.deletar{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 100%;
+    user-select: none;
+    cursor: pointer;
+}
+
+.deletar span:hover{
+    transition: 0.2s;
+    transform: scale(1.2);
+}
+
+.fun{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.infosForPlayer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.campoFs1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin-bottom: 1rem;
+}
+
+.campoFs1 h1{
+    font-size: 32px;
+    margin: 0;
+    font-weight: 600;
+}
+
+.fase1{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.elementosGame {
+    background-color: #3C474B;
+    border-radius: 1rem;
+    width: 64%;
+    height: 54%;
+}
+
+
+.animaTroca{
+    position: relative;
+    animation: troca 1s;
+}
+
+@keyframes troca {
+    0% { 
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.playerDead{
+    opacity: 0.5;
+    user-select: none;
+    cursor: no-drop;
+}
+
+#playersTable{
+    width: 80%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+}
+
+.alinhaTable {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 75%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#playersTable th, #playersTable td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    user-select: none;
+    cursor: move;
+}
+
+#playersTable thead tr th {
+    margin: 10px;
+    font-weight: bold;
+}
+
+.elementosOrdem {
+    background-color: #3C474B;
+    border-radius: 1rem;
+    width: 60%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.alinhaBtnSO{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.opacid{
+    opacity: 1;
+}

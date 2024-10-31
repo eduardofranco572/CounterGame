@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
+    
+
+    <title>CF</title>
+</head>
+<body>
+    <section class="cardAddPlayer">
+        <div class="elementos">
+            <div class="fechar">
+                <span class="material-symbols-outlined">close</span>
+            </div>
+            <form>
+                <div class="alinhaform">
+                    <div class="campo">
+                        <h1>Nome do Player</h1>
+                        <input id="nameInput" type="text" placeholder="Digite o nome do player">
+                    </div>
+                    <button id="AdicionaOplayer">Adicionar Player</button>
+                </div>
+            </form>
+        </div>        
+    </section>
+
+    <section class="cardAddVida">
+        <div class="elementos">
+            <div class="fecharVida">
+                <span class="material-symbols-outlined">close</span>
+            </div>
+            <form>
+                <div class="alinhaform">
+                    <div class="campo">
+                        <h1>Vida dos Players</h1>
+                        <input id="vidaInput" type="number" placeholder="Digite o nome do player">
+                    </div>
+                    <button id="AdicionaVida">Adicionar Vida</button>
+                </div>
+            </form>
+        </div>        
+    </section>
+
+    <section class="cardOrdenarPlayers">
+        <div class="elementosOrdem">
+            <div class="fecharOrdenar">
+                <span class="material-symbols-outlined">close</span>
+            </div>
+            <div class="alinhaTable">
+                <table id="playersTable">
+                    <thead>
+                        <tr>
+                            <th>Nome do Player</th>
+                            <th>Vida</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+            <div class="alinhaBtnSO">
+                <button id="salvarOrdem">Salvar Ordem</button>
+            </div>
+        </div>
+    </section>
+    
+    <section class="cardTrocarWallpaper">
+        <div class="elementosGame">
+            <div class="fecharTW">
+                <span class="material-symbols-outlined">close</span>
+            </div>
+            <form>
+                <div class="alinhaform">
+                    <div class="campo">
+                        <h1>Url</h1>
+                        <input id="url" type="text" placeholder="Digite a url da img">
+                    </div>
+                    <button id="trocaWall">Trocar Wallpaper</button>
+                </div>
+            </form>
+        </div>        
+    </section>
+
+    <section class="cardAddRounds">
+        <div class="elementosGame">
+            <div class="fecharGame">
+                <span class="material-symbols-outlined">close</span>
+            </div>
+            <form>
+                <div class="alinhaform">
+                    <div class="campoFs1">
+                        <h1 id="nomeplayerview">TESTE</h1>
+                        <div class="infosForPlayer">
+                            <p>Quantide de Cartas</p>
+                            <h1 id="qtdCartas">0</h1>
+                        </div>
+                    </div>
+                    <button id="playButton">OK</button>
+                </div>
+            </form>
+        </div>        
+    </section>
+
+    <section class="container opacid">
+        <div class="Jogadores">
+
+        </div>
+        <div class="menu">
+            <div class="addPlayer">
+                <span class="material-symbols-outlined">add_circle</span>
+            </div>
+            <div class="addVida">
+                <span class="material-symbols-outlined">favorite</span>
+            </div>
+            <div class="restartGame">
+                <span class="material-symbols-outlined">restart_alt</span>
+            </div>
+            <div class="ordenarPlyers">
+                <span class="material-symbols-outlined">format_list_bulleted</span>
+            </div>
+            <div class="trocarWallpaper">
+                <span class="material-symbols-outlined">image</span>
+            </div>
+        </div>
+    </section>
+    <section class="passar opacid">
+        <div class="btnPassaTurno">
+            <button id="startGame">Começar</button>
+        </div>
+    </section>
+
+    <script src="js/jogo.js"></script>
+</body>
+</html>
